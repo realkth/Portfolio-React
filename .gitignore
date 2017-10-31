@@ -9,7 +9,7 @@
 # production
 /build
 /public
-
+/.vscode
 # misc
 .DS_Store
 .env.local
