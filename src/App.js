@@ -1,7 +1,12 @@
 import React, { Component } from 'react';
+// import { Parallax } from "react-parallax";
+import Parallax from 'react-springy-parallax'
+
 import Navbar from './components/navbar';
-import Jumbotron from './components/jumbotron';
-// import logo from './logo.svg';
+import Page1 from './components/page1';
+import Page2 from './components/page2';
+import Page3 from './components/page3';
+import Page4 from './components/page4';
 import './App.css';
 
 class App extends Component {
@@ -9,7 +14,10 @@ class App extends Component {
     return (
       <div className="App" >
         <Navbar />
-        <Jumbotron />
+          <Page1 />
+          <Page2 />
+          <Page3 />
+          <Page4 />
       </div >
     );
   }
