@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-// import { Parallax } from "react-parallax";
 import Parallax from 'react-springy-parallax'
 
 import Navbar from './components/navbar';
@@ -13,11 +12,19 @@ class App extends Component {
   render() {
     return (
       <div className="App" >
-        <Navbar />
+        <Parallax ref="parallax" pages={4}>
+
+          <Parallax.Layer offset={0} speed={1} style={{ backgroundColor: '#000' }} />
+          <Parallax.Layer offset={1} speed={1} style={{ backgroundColor: '#fefefe' }} />
+          <Parallax.Layer offset={2} speed={1} style={{ backgroundColor: '#000' }} />
+
+        {/* <Navbar /> */}
           <Page1 />
           <Page2 />
           <Page3 />
           <Page4 />
+        </Parallax>
+
       </div >
     );
   }

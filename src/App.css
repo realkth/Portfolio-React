@@ -2,25 +2,27 @@
 h1 {
   white-space: pre-line; }
 
+ul li {
+  list-style: none; }
+
 .to-bottom {
   background: none;
   color: #fefefe;
   border: none;
   width: 100%;
   position: absolute;
-  bottom: 60px;
+  bottom: 3%;
   cursor: pointer; }
 
 .page-1 {
   /* width: 50vw;  */
   position: relative;
-  height: 100vh;
+  min-height: 100vh;
   text-align: center;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #fefefe;
-  border-radius: 0; }
+  color: #fefefe; }
 
 .page-1-content {
   /* 타 기기 테스트 후 정함 */
@@ -28,14 +30,11 @@ h1 {
 
 .page-2 {
   /* width: 50vw;  */
-  height: 100vh;
   text-align: center;
   display: flex;
   align-items: center;
   justify-content: center;
-  background: -webkit-linear-gradient(#968f0f 10%, #76b389 60%, #1a8ee7 100%);
-  color: #000;
-  border-radius: 0; }
+  color: #000; }
 
 .page-2-content {
   /* 타 기기 테스트 후 정함 */
@@ -43,14 +42,11 @@ h1 {
 
 .page-3 {
   /* width: 50vw;  */
-  height: 100vh;
   text-align: center;
   display: flex;
   align-items: center;
   justify-content: center;
-  background: -webkit-linear-gradient(#161609 10%, #572896 60%, #c54512 100%);
-  color: #fefefe;
-  border-radius: 0; }
+  color: #fefefe; }
 
 .page-3-content {
   /* 타 기기 테스트 후 정함 */
@@ -58,14 +54,11 @@ h1 {
 
 .page-4 {
   /* width: 50vw;  */
-  height: 100vh;
   text-align: center;
   display: flex;
   align-items: center;
   justify-content: center;
-  background: -webkit-linear-gradient(#22c73e 10%, #640a5e 60%, #f1f8c7 100%);
-  color: #000;
-  border-radius: 0; }
+  color: #000; }
 
 .page-4-content {
   /* 타 기기 테스트 후 정함 */
