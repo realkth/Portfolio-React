@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-
+// 연락처
 class Page6 extends Component {
   render() {
     return (

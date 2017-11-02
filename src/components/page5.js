@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-
+// 어떤 개발자가 되고 싶나
 class Page5 extends Component {
   render() {
     return (

@@ -2,8 +2,21 @@
 h1 {
   white-space: pre-line; }
 
+.App {
+  min-height: 100vh;
+  overflow: hidden; }
+
 ul li {
   list-style: none; }
+
+.to-top {
+  background: none;
+  color: #fefefe;
+  border: none;
+  width: 100%;
+  position: absolute;
+  top: 3%;
+  cursor: pointer; }
 
 .to-bottom {
   background: none;
@@ -14,29 +27,43 @@ ul li {
   bottom: 3%;
   cursor: pointer; }
 
+.indicator {
+  position: absolute;
+  right: 3%;
+  width: 30px;
+  height: 10%;
+  top: 40%; }
+
+.carousel__dot {
+  width: 5%;
+  height: 10%; }
+
 .page-1 {
-  /* width: 50vw;  */
   position: relative;
-  min-height: 100vh;
+  width: 100%;
+  height: 100vh;
   text-align: center;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #fefefe; }
+  color: #fefefe;
+  background-color: #000; }
 
-.page-1-content {
-  /* 타 기기 테스트 후 정함 */
-  /* transform: translateY(200%); */ }
+.page-1-p {
+  font-size: 1.9rem; }
 
 .page-2 {
-  /* width: 50vw;  */
-  min-height: 100vh;
+  position: relative;
+  height: 100vh;
   text-align: center;
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #000;
-  color: #000; }
+  color: #fefefe;
+  background-color: #000; }
+
+.page-2-p {
+  font-size: 1.9rem; }
 
 .page-2-content {
   /* 타 기기 테스트 후 정함 */
@@ -44,13 +71,14 @@ ul li {
 
 .page-3 {
   /* width: 50vw;  */
-  min-height: 100vh;
+  height: 100vh;
+  position: relative;
   text-align: center;
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #fefefe;
-  color: #fefefe; }
+  color: #fefefe;
+  background-color: #000; }
 
 .page-3-content {
   /* 타 기기 테스트 후 정함 */
@@ -58,13 +86,14 @@ ul li {
 
 .page-4 {
   /* width: 50vw;  */
-  min-height: 100vh;
+  height: 100vh;
+  position: relative;
   text-align: center;
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #000;
-  color: #000; }
+  color: #fefefe;
+  background-color: #000; }
 
 .page-4-content {
   /* 타 기기 테스트 후 정함 */
@@ -72,19 +101,22 @@ ul li {
 
 .page-5 {
   /* width: 50vw;  */
-  min-height: 100vh;
+  height: 100vh;
+  position: relative;
   text-align: center;
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #fefefe;
-  color: #fefefe; }
+  color: #fefefe;
+  background-color: #000; }
 
 .page-6 {
   /* width: 50vw;  */
-  min-height: 100vh;
+  height: 100vh;
+  position: relative;
   text-align: center;
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #fefefe; }
+  color: #fefefe;
+  background-color: #000; }

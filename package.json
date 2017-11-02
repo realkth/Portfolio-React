@@ -5,10 +5,10 @@
   "dependencies": {
     "node-sass-chokidar": "0.0.3",
     "npm-run-all": "^4.1.1",
+    "pure-react-carousel": "^1.9.9",
     "react": "^16.0.0",
     "react-dom": "^16.0.0",
-    "react-scripts": "1.0.15",
-    "react-springy-parallax": "^1.1.0"
+    "react-scripts": "1.0.15"
   },
   "scripts": {
     "build-css": "node-sass-chokidar --include-path ./src --include-path ./node_modules src/ -o src/",

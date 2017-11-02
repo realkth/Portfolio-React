@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-
+// 개발자로서의 나의 장점
 class Page3 extends Component {
   render() {
     return (
@@ -19,7 +19,7 @@ class Page3 extends Component {
               </div>
             </div>
             </div>
-            <div className="col">
+            {/* <div className="col">
               <ul className="info">
                 <li className="info-list">
                   <h4 className="content-title">팀 구성원</h4>
@@ -41,7 +41,7 @@ class Page3 extends Component {
                   <p className="content-text">기능별 분담, git 을 활용한 버전 관리, 페어 프로그래밍, 작업 분담은 깃헙의 프로젝트 메뉴를 활용해서 관리, 작업 일정은 스크럼보드를 통해 관리</p>
                 </li>
               </ul>
-            </div>
+            </div> */}
           </div>
         </div>
         );
