@@ -13,8 +13,8 @@ class Page2 extends Component {
           <iframe className="embed-responsive-item" width={560} height={315} src="https://www.youtube.com/embed/k8K98UBskyA" frameBorder={0} allowFullScreen />
         </div> */}
         <div className="container">
-          <h1 className="">Bond</h1>
-          <p className="sub-text">그룹 생성이 가능한 SNS 서비스</p>
+          {/* <h1 className="">Bond</h1>
+          <p className="sub-text">그룹 생성이 가능한 SNS 서비스</p> */}
           <div className="content-wrapper row">
             <div className="col video-wrapper">
               <div className="media">

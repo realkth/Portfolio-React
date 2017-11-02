@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 
-class Page4 extends Component {
+class Page5 extends Component {
   render() {
     return (
-      <div className="page-4">
-        <div className="page-4-content">
+      <div className="page-5">
+        <div className="page-5-content">
           <h1>더 알아보기</h1>
           <p>나는 누구?</p>
           <p><a className="btn btn-dark btn-lg" href="https://github.com/realkth" role="button">내 깃헙</a></p>
@@ -14,4 +14,4 @@ class Page4 extends Component {
   }
 }
 
-export default Page4;
+export default Page5;
