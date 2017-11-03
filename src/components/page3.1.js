@@ -1,21 +1,22 @@
 import React, { Component } from 'react';
 import { ButtonBack, ButtonNext } from 'pure-react-carousel';
 
-// 어떤 개발자가 되고 싶나
-class Page5 extends Component {
+class Page3 extends Component {
   render() {
     return (
-      <div className="page-5">
+      <div className="page-3">
         <ButtonBack className="to-top">
           <span className="fa fa-angle-double-up" aria-hidden="true"></span>
         </ButtonBack>
         <div className="container-fluid">
-          <div className="page-5-content">
-            <h1>5더 알아보기</h1>
-            <p>나는 누구?</p>
-            <p><a className="btn btn-dark btn-lg" href="https://github.com/realkth" role="button">내 깃헙</a></p>
+          <div className="content-wrapper row">
+            <div className="col video-wrapper">
+              <div className="media">
+                <iframe title="project1" width="560" height="315" className="" src="https://www.youtube.com/embed/gty0xzSBzRk" frameBorder="0" gesture="media" allowFullScreen />
+              </div>
+            </div>
           </div>
-        </div>
+        </div >
         <ButtonNext className="to-bottom">
           <span className="fa fa-angle-double-down" aria-hidden="true"></span>
         </ButtonNext>
@@ -24,4 +25,4 @@ class Page5 extends Component {
   }
 }
 
-export default Page5;
+export default Page3;

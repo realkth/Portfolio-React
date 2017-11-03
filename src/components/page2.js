@@ -1,21 +1,39 @@
 import React, { Component } from 'react';
-// 난 누구인가
+import { ButtonBack, ButtonNext } from 'pure-react-carousel';
+import Typed from 'typed.js';
+
 class Page2 extends Component {
+  componentDidMount() {
+    const options = {
+      strings: [
+        "HTML5", "CSS3", "Vue.js", "React", "JavaScript", "ES6",  "jQuery", "Sass", "Bootstrap"
+      ],
+      typeSpeed: 150,
+      startDelay: 500,
+      backSpeed: 100,
+      backDelay: 1300,
+      loop: true,
+    }
+    this.typed = new Typed(this.el, options);
+  }
+  componentWillUnmount() {
+    this.typed.destroy();
+  }
   render() {
     return (
       <div className="page-2">
-        <div className="page-2-content">
-          <p className="page-2-p">안녕하세요!</p>
-          <h1>프론트엔드 개발자 김태훈의 <br />포트폴리오 웹사이트입니다.</h1>
-          <p><a className="btn btn-dark btn-lg" href="https://github.com/realkth" role="button">
-            <span className="fa fa-github " aria-hidden="true"></span>
-            &nbsp; Github</a></p>
+        <ButtonBack className="to-top">
+          <span className="fa fa-angle-double-up" aria-hidden="true"></span>
+        </ButtonBack>
+        <div className="container-fluid">
+          <div className="page-2-content">
+            <h4 className="page-2-h4">저는 &nbsp;
+            <strong id="typed" style={{ whiteSpace: "pre" }} ref={(el) => { this.el = el; }}></strong> 할 줄 아는 <strong></strong>프론트엔드 개발자입니다.</h4>
+          </div>
         </div>
-        <button className="to-bottom">
-          <span>스크롤하여 계속 보기</span>
-          <br />
-          <span className="fa fa-arrow-down" aria-hidden="true"></span>
-        </button>
+        <ButtonNext className="to-bottom">
+          <span className="fa fa-angle-double-down" aria-hidden="true"></span>
+        </ButtonNext>
       </div>
     );
   }
