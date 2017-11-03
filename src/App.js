@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
-// import { Carousel } from 'react-responsive-carousel';
-import { CarouselProvider, Slider, Slide, ButtonBack, ButtonNext, DotGroup } from 'pure-react-carousel';
+import { CarouselProvider, Slider, Slide, ButtonBack, ButtonNext } from 'pure-react-carousel';
 
 // import Navbar from './components/navbar';
 // import Page1 from './components/page1';
@@ -12,33 +11,37 @@ import { CarouselProvider, Slider, Slide, ButtonBack, ButtonNext, DotGroup } fro
 import './App.css';
 
 class App extends Component {
+  offsetWidth() {
+    if (window.document.body.offsetWidth < 768) {
+      return <span className="touch-guide">터치하여 계속 보기</span>
+    } else {
+      return <span className="touch-guide">클릭하여 계속 보기</span>
+    }
+  };
   render() {
     return (
       <div className="App">
         <CarouselProvider
           visibleSlides={1}
           orientation="vertical"
-          /* naturalSlideWidth={'100vw'}
-          naturalSlideHeight={'100vh'} */
           totalSlides={6}
           step={1}
+          touchEnabled={false}
         >
           <Slider>
-
             <Slide index={0}>
               <div className="page-1">
                 <div className="page-1-content">
                   <p className="page-1-p">안녕하세요!</p>
-                  <h1>프론트엔드 개발자 김태훈의 <br />포트폴리오 웹사이트입니다.</h1>
+                  <h1>프론트엔드 개발자 <strong>김태훈</strong>의 <br />포트폴리오 웹사이트입니다.</h1>
                   <p><a className="btn btn-dark btn-lg" href="https://github.com/realkth" role="button">
                     <span className="fa fa-github " aria-hidden="true"></span>
                     &nbsp; Github</a></p>
-                  <DotGroup className="indicator"></DotGroup>
                 </div>
                 <ButtonNext className="to-bottom">
-                  <span>스크롤하여 계속 보기</span>
+                  {this.offsetWidth()}
                   <br />
-                  <span className="fa fa-arrow-down" aria-hidden="true"></span>
+                  <span className="fa fa-angle-double-down" aria-hidden="true"></span>
                 </ButtonNext>
               </div>
             </Slide>
@@ -46,22 +49,17 @@ class App extends Component {
             <Slide index={1}>
               <div className="page-2">
                 <ButtonBack className="to-top">
-                  <span>스크롤하여 계속 보기</span>
-                  <br />
-                  <span className="fa fa-arrow-up" aria-hidden="true"></span>
+                  <span className="fa fa-angle-double-up" aria-hidden="true"></span>
                 </ButtonBack>
                 <div className="page-2-content">
-                  <p className="page-2-p">안녕하세요!</p>
+                  <p className="page-2-p">2안녕하세요!</p>
                   <h1>프론트엔드 개발자 김태훈의 <br />포트폴리오 웹사이트입니다.</h1>
                   <p><a className="btn btn-dark btn-lg" href="https://github.com/realkth" role="button">
                     <span className="fa fa-github " aria-hidden="true"></span>
                     &nbsp; Github</a></p>
-                  <DotGroup className="indicator"></DotGroup>
                 </div>
                 <ButtonNext className="to-bottom">
-                  <span>스크롤하여 계속 보기</span>
-                  <br />
-                  <span className="fa fa-arrow-down" aria-hidden="true"></span>
+                  <span className="fa fa-angle-double-down" aria-hidden="true"></span>
                 </ButtonNext>
               </div>
             </Slide>
@@ -69,9 +67,7 @@ class App extends Component {
             <Slide index={2}>
               <div className="page-3">
                 <ButtonBack className="to-top">
-                  <span>스크롤하여 계속 보기</span>
-                  <br />
-                  <span className="fa fa-arrow-up" aria-hidden="true"></span>
+                  <span className="fa fa-angle-double-up" aria-hidden="true"></span>
                 </ButtonBack>
                 <div className="container">
                   <div className="content-wrapper row">
@@ -81,12 +77,9 @@ class App extends Component {
                       </div>
                     </div>
                   </div>
-                  <DotGroup className="indicator"></DotGroup>
                 </div >
                 <ButtonNext className="to-bottom">
-                  <span>스크롤하여 계속 보기</span>
-                  <br />
-                  <span className="fa fa-arrow-down" aria-hidden="true"></span>
+                  <span className="fa fa-angle-double-down" aria-hidden="true"></span>
                 </ButtonNext>
               </div>
             </Slide>
@@ -94,20 +87,15 @@ class App extends Component {
             <Slide index={3}>
               <div className="page-4">
                 <ButtonBack className="to-top">
-                  <span>스크롤하여 계속 보기</span>
-                  <br />
-                  <span className="fa fa-arrow-up" aria-hidden="true"></span>
+                  <span className="fa fa-angle-double-up" aria-hidden="true"></span>
                 </ButtonBack>
                 <div className="page-4-content">
-                  <h1>더 알아보기</h1>
+                  <h1>4더 알아보기</h1>
                   <p>나는 누구?</p>
                   <p><a className="btn btn-dark btn-lg" href="https://github.com/realkth" role="button">내 깃헙</a></p>
-                  <DotGroup className="indicator"></DotGroup>
                 </div>
                 <ButtonNext className="to-bottom">
-                  <span>스크롤하여 계속 보기</span>
-                  <br />
-                  <span className="fa fa-arrow-down" aria-hidden="true"></span>
+                  <span className="fa fa-angle-double-down" aria-hidden="true"></span>
                 </ButtonNext>
               </div>
             </Slide>
@@ -115,20 +103,15 @@ class App extends Component {
             <Slide index={4}>
               <div className="page-5">
                 <ButtonBack className="to-top">
-                  <span>스크롤하여 계속 보기</span>
-                  <br />
-                  <span className="fa fa-arrow-up" aria-hidden="true"></span>
+                  <span className="fa fa-angle-double-up" aria-hidden="true"></span>
                 </ButtonBack>
                 <div className="page-5-content">
-                  <h1>더 알아보기</h1>
+                  <h1>5더 알아보기</h1>
                   <p>나는 누구?</p>
                   <p><a className="btn btn-dark btn-lg" href="https://github.com/realkth" role="button">내 깃헙</a></p>
-                <DotGroup className="indicator"></DotGroup>
                 </div>
                 <ButtonNext className="to-bottom">
-                  <span>스크롤하여 계속 보기</span>
-                  <br />
-                  <span className="fa fa-arrow-down" aria-hidden="true"></span>
+                  <span className="fa fa-angle-double-down" aria-hidden="true"></span>
                 </ButtonNext>
               </div>
             </Slide>
@@ -136,16 +119,13 @@ class App extends Component {
             <Slide index={5}>
               <div className="page-6">
                 <ButtonBack className="to-top">
-                  <span>스크롤하여 계속 보기</span>
-                  <br />
-                  <span className="fa fa-arrow-up" aria-hidden="true"></span>
+                  <span className="fa fa-angle-double-up" aria-hidden="true"></span>
                 </ButtonBack>
                 <div className="page-6-content">
-                  <h1>더 알아보기</h1>
+                  <h1>6더 알아보기</h1>
                   <p>나는 누구?</p>
                   <p><a className="btn btn-dark btn-lg" href="https://github.com/realkth" role="button">내 깃헙</a></p>
                 </div>
-                <DotGroup className="indicator"></DotGroup>
               </div>
             </Slide>
           </Slider>
