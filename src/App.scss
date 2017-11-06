@@ -1,11 +1,27 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans');
+body {
+  font-family: 'Noto Sans', sans-serif;
+}
+
 // 기본 레이아웃
 h1 {
   white-space: pre-line;
+  font-size: 1.9rem;
+}
+
+h5 {
+  font-size: 1.1rem;
+}
+
+.dotdot {
+  background: red;
 }
 
 .App {
   min-height: 101vh;
-  overflow: hidden;
+  overflow: hidden; // overflow: auto;
+  padding: 5px;
+  background: #000;
 }
 
 .container {
@@ -19,6 +35,14 @@ ul {
   padding: 0;
 }
 
+.guide-msg {
+  position: absolute;
+  top: 1%;
+  right: 1%;
+  font-size: 0.8rem;
+  color: #ebe6e6;
+}
+
 .touch-guide {
   font-size: 0.8rem;
 }
@@ -28,7 +52,18 @@ ul {
   color: #fefefe;
   border: none;
   width: 100%;
-  height: 5%;
+  height: 7%;
+  position: absolute;
+  top: 1%;
+  cursor: pointer;
+}
+
+.to-top-no-arrow {
+  background: none;
+  color: #fefefe;
+  border: none;
+  width: 100%;
+  height: 10%;
   position: absolute;
   top: 1%;
   cursor: pointer;
@@ -39,12 +74,59 @@ ul {
   color: #fefefe;
   border: none;
   width: 100%;
-  height: 5%;
+  height: 7%;
   position: absolute;
   bottom: 1%;
   cursor: pointer;
 }
 
+.to-bottom-no-arrow {
+  background: none;
+  color: #fefefe;
+  border: none;
+  width: 100%;
+  height: 10%;
+  position: absolute;
+  bottom: 1%;
+  cursor: pointer;
+}
+
+.to-bottom-first {
+  background: none;
+  color: #fefefe;
+  border: none;
+  width: 100%;
+  height: 7%;
+  position: absolute;
+  bottom: 1%;
+  cursor: pointer;
+}
+
+.to-first {
+  background: none;
+  color: #fefefe;
+  border: none;
+  width: 100%;
+  height: 7%;
+  position: absolute;
+  bottom: 1%;
+  cursor: pointer;
+}
+
+// iPhone 6 width: 375px
+// iPhone 5 width: 320px
+// Galaxy S5 width: 320px
+// mobile에서는 아예 버튼을 없애고 스크롤 이벤트를..
+// @media screen and (min-width: 0px) and (max-width: 768px) {
+//   .to-top {
+//     display: none;
+//   }
+// }
+// @media screen and (min-width: 0px) and (max-width: 768px) {
+//   .to-bottom {
+//     display: none;
+//   }
+// }
 .page-1 {
   position: relative;
   width: 100%;
@@ -114,9 +196,7 @@ ul {
   justify-content: center;
   color: #fefefe;
   background-color: #000;
-}
-
-// page2 세부 CSS
+} // page2 세부 CSS
 .page-2-h4 {
   font-weight: 400;
 }
@@ -162,33 +242,41 @@ ul {
   100% {
     opacity: 1;
   }
-}
-
-// page3,4 프로젝트 내역 세부 CSS
+} // page3,4 프로젝트 내역 세부 CSS
 .project-title {
   margin: 15px 0 5px 0;
   text-align: center;
+  font-size: 1.6rem;
 }
 
 .sub-title {
   text-align: center;
   padding-bottom: 10px;
+  font-size: 1.2rem;
 }
 
 .embed-responsive {
   margin-bottom: 10px;
 }
 
+.info {
+  text-align: left;
+}
+
 .content-title {
-  // padding-top: 10px;
+  padding-top: 10px;
 }
 
 .content-text-summary {
-
+  margin-bottom: 0;
 }
 
-.content-wrapper {
-  // text-align: center;
+.btn-wrapper {
+  text-align: center;
+}
+
+.btn-info-link {
+  margin-right: 10px;
 }
 
 @media screen and (min-width: 0px) and (max-width: 533px) {

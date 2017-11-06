@@ -1,9 +1,22 @@
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans");
+body {
+  font-family: 'Noto Sans', sans-serif; }
+
 h1 {
-  white-space: pre-line; }
+  white-space: pre-line;
+  font-size: 1.9rem; }
+
+h5 {
+  font-size: 1.1rem; }
+
+.dotdot {
+  background: red; }
 
 .App {
   min-height: 101vh;
-  overflow: hidden; }
+  overflow: hidden;
+  padding: 5px;
+  background: #000; }
 
 .container {
   min-height: 90%;
@@ -14,6 +27,13 @@ ul {
   margin: 0;
   padding: 0; }
 
+.guide-msg {
+  position: absolute;
+  top: 1%;
+  right: 1%;
+  font-size: 0.8rem;
+  color: #ebe6e6; }
+
 .touch-guide {
   font-size: 0.8rem; }
 
@@ -22,7 +42,17 @@ ul {
   color: #fefefe;
   border: none;
   width: 100%;
-  height: 5%;
+  height: 7%;
+  position: absolute;
+  top: 1%;
+  cursor: pointer; }
+
+.to-top-no-arrow {
+  background: none;
+  color: #fefefe;
+  border: none;
+  width: 100%;
+  height: 10%;
   position: absolute;
   top: 1%;
   cursor: pointer; }
@@ -32,7 +62,37 @@ ul {
   color: #fefefe;
   border: none;
   width: 100%;
-  height: 5%;
+  height: 7%;
+  position: absolute;
+  bottom: 1%;
+  cursor: pointer; }
+
+.to-bottom-no-arrow {
+  background: none;
+  color: #fefefe;
+  border: none;
+  width: 100%;
+  height: 10%;
+  position: absolute;
+  bottom: 1%;
+  cursor: pointer; }
+
+.to-bottom-first {
+  background: none;
+  color: #fefefe;
+  border: none;
+  width: 100%;
+  height: 7%;
+  position: absolute;
+  bottom: 1%;
+  cursor: pointer; }
+
+.to-first {
+  background: none;
+  color: #fefefe;
+  border: none;
+  width: 100%;
+  height: 7%;
   position: absolute;
   bottom: 1%;
   cursor: pointer; }
@@ -136,14 +196,31 @@ ul {
 
 .project-title {
   margin: 15px 0 5px 0;
-  text-align: center; }
+  text-align: center;
+  font-size: 1.6rem; }
 
 .sub-title {
   text-align: center;
-  padding-bottom: 10px; }
+  padding-bottom: 10px;
+  font-size: 1.2rem; }
 
 .embed-responsive {
   margin-bottom: 10px; }
+
+.info {
+  text-align: left; }
+
+.content-title {
+  padding-top: 10px; }
+
+.content-text-summary {
+  margin-bottom: 0; }
+
+.btn-wrapper {
+  text-align: center; }
+
+.btn-info-link {
+  margin-right: 10px; }
 
 @media screen and (min-width: 0px) and (max-width: 533px) {
   .btn-info-link {
