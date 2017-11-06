@@ -6,13 +6,15 @@ class Page2 extends Component {
   componentDidMount() {
     const options = {
       strings: [
-        "HTML5", "CSS3", "Vue.js", "React", "JavaScript", "ES6",  "jQuery", "Sass", "Bootstrap"
+        "HTML5", "CSS3", "Vue.js", "React", "JavaScript", "ES6", "jQuery"
       ],
       typeSpeed: 150,
       startDelay: 500,
       backSpeed: 100,
       backDelay: 1300,
       loop: true,
+      // fadeOut: true,
+
     }
     this.typed = new Typed(this.el, options);
   }
