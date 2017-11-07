@@ -80,7 +80,7 @@ class Page3 extends Component {
                   </ul>
                 </li>
                 <h5 className="content-title"><span className="fa fa-hashtag" aria-hidden="true"></span> 활용 기술</h5>
-                <p className="content-text-stacks fa fa-angle-right" aria-hidden="true"> Vue.js, Axios, Bulma, Sass
+                <p className="content-text-stacks fa fa-angle-right" aria-hidden="true"> <code>Vue.js</code> <code>Axios</code> <code>Bulma</code> <code>Sass</code> 
                 </p>
               </ul>
             </div>

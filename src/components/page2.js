@@ -13,8 +13,6 @@ class Page2 extends Component {
       backSpeed: 100,
       backDelay: 1300,
       loop: true,
-      // fadeOut: true,
-
     }
     this.typed = new Typed(this.el, options);
   }

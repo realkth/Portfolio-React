@@ -81,7 +81,7 @@ class Page4 extends Component {
                   </ul>
                 </li>
                 <h5 className="content-title"><span className="fa fa-hashtag" aria-hidden="true"></span> 활용 기술</h5>
-                <p className="content-text-stacks fa fa-angle-right" aria-hidden="true"> Vue.js, Vuex, Axios, Scss, Firebase
+                <p className="content-text-stacks fa fa-angle-right" aria-hidden="true"> <code>Vue.js</code> <code>Vuex</code> <code>Axios</code> <code>Scss</code> <code>Firebase</code>
                 </p>
               </ul>
             </div>

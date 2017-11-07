@@ -19,7 +19,7 @@ class Page6 extends Component {
           </div>
         </div>
         <Dot slide={0} className="to-first">
-          <span className="touch-guide">처음페이지로</span>
+          <span className="touch-guide">처음 페이지로</span>
           <br />
           <span className="fa fa-step-backward" aria-hidden="true"></span>
         </Dot>

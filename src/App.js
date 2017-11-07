@@ -40,14 +40,14 @@ class App extends Component {
                 <div className="container-fluid">
                   <div className="page-1-content">
                     <p className="page-1-p">안녕하세요!</p>
-                    <h1>프론트엔드 개발자 <strong>김태훈</strong>의 <br />포트폴리오 웹사이트입니다.</h1>
+                    <h1>프론트엔드 개발자 <strong>김태훈</strong>의 포트폴리오 웹사이트입니다.</h1>
                   </div>
-                </div>
                 <ButtonNext className="to-bottom-first">
                   {this.offsetWidth()}
                   <br />
                   <span className="fa fa-angle-double-down" aria-hidden="true"></span>
                 </ButtonNext>
+                </div>
               </div>
             </Slide>
 
