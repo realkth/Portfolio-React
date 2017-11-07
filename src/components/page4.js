@@ -3,28 +3,12 @@ import { ButtonBack, ButtonNext } from 'pure-react-carousel';
 
 // 프로젝트 내역
 class Page4 extends Component {
-  offsetWidthTop() {
-    if (window.document.body.offsetWidth < 768) {
-      return <ButtonBack className="to-top-no-arrow"></ButtonBack>
-    } else {
-      return <ButtonBack className="to-top">
-        <span className="fa fa-angle-double-up" aria-hidden="true"></span>
-      </ButtonBack>
-    }
-  };
-  offsetWidthBottom() {
-    if (window.document.body.offsetWidth < 768) {
-      return <ButtonNext className="to-bottom-no-arrow"></ButtonNext>
-    } else {
-      return <ButtonNext className="to-bottom">
-        <span className="fa fa-angle-double-down" aria-hidden="true"></span>
-      </ButtonNext>
-    }
-  };
   render() {
     return (
       <div className="page-4">
-        {this.offsetWidthTop()}
+        <ButtonBack className="to-top-project">
+          <span className="fa fa-angle-double-up" aria-hidden="true"></span>
+        </ButtonBack>
         <div className="container-fluid">
           <div className="title-wrapper">
             <h2 className="project-title">Mood</h2>
@@ -37,26 +21,26 @@ class Page4 extends Component {
               </div>
               <div className="btn-wrapper">
                 <div className="btn-group" role="group" aria-label="button group">
-                  <form action="https://github.com/realkth/mood">
-                    <button type="submit" className="btn btn-info-link btn-outline-dark">
+                  <form action="https://github.com/realkth/mood" target="_blank">
+                    <button type="submit" className="btn btn-info-link btn-outline-secondary">
                       <span className="fa fa-github" aria-hidden="true"></span>
                       &nbsp;Github
                   </button>
                   </form>
-                  <form action="https://mood-vuex.firebaseapp.com/">
-                    <button type="submit" className="btn btn-info-link btn-outline-dark">
+                  <form action="https://mood-vuex.firebaseapp.com/" target="_blank">
+                    <button type="submit" className="btn btn-info-link btn-outline-secondary">
                       <span className="fa fa-globe" aria-hidden="true"></span>
                       &nbsp;Web Site
                   </button>
                   </form>
-                  <form action="https://docs.google.com/spreadsheets/d/1i7tOWOv7eNiqQlEGzf7wO5ybKPk8lishXqrKqkRDrzU/edit?ts=59b76c7c#gid=0">
-                    <button type="submit" className="btn btn-info-link btn-outline-dark">
+                  <form action="https://docs.google.com/spreadsheets/d/1i7tOWOv7eNiqQlEGzf7wO5ybKPk8lishXqrKqkRDrzU/edit?ts=59b76c7c#gid=0" target="_blank">
+                    <button type="submit" className="btn btn-info-link btn-outline-secondary">
                       <span className="fa fa-pencil-square-o" aria-hidden="true"></span>
                       &nbsp;Daily Scrum
                   </button>
                   </form>
-                  <form action="https://youtu.be/k8K98UBskyA">
-                    <button type="submit" className="btn btn-info-link btn-outline-dark">
+                  <form action="https://youtu.be/k8K98UBskyA" target="_blank">
+                    <button type="submit" className="btn btn-info-link btn-outline-secondary">
                       <span className="fa fa-youtube-play" aria-hidden="true"></span>
                       &nbsp;Youtube
                   </button>
@@ -87,10 +71,9 @@ class Page4 extends Component {
             </div>
           </div>
         </div>
-        {this.offsetWidthBottom()}
-        {/* <ButtonNext className="to-bottom">
+        <ButtonNext className="to-bottom-project">
           <span className="fa fa-angle-double-down" aria-hidden="true"></span>
-        </ButtonNext> */}
+        </ButtonNext>
       </div>
     );
   }

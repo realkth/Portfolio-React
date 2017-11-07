@@ -13,7 +13,7 @@ h5 {
   min-height: 101vh;
   overflow: hidden;
   padding: 5px;
-  background: #000; }
+  background: #1a1a1a; }
 
 .container {
   min-height: 90%;
@@ -25,6 +25,13 @@ ul {
   padding: 0; }
 
 .guide-msg {
+  position: absolute;
+  top: 25px;
+  right: 1%;
+  font-size: 0.8rem;
+  color: #ebe6e6; }
+
+.react-msg {
   position: absolute;
   top: 1%;
   right: 1%;
@@ -42,16 +49,18 @@ ul {
   height: 8%;
   position: absolute;
   top: 1%;
+  left: 0%;
   cursor: pointer; }
 
-.to-top-no-arrow {
+.to-top-project {
   background: none;
   color: #fefefe;
   border: none;
   width: 100%;
-  height: 10%;
+  height: 8%;
   position: absolute;
   top: 1%;
+  left: 0%;
   cursor: pointer; }
 
 .to-bottom {
@@ -62,16 +71,18 @@ ul {
   height: 8%;
   position: absolute;
   bottom: 1%;
+  left: 0%;
   cursor: pointer; }
 
-.to-bottom-no-arrow {
+.to-bottom-project {
   background: none;
   color: #fefefe;
   border: none;
   width: 100%;
   height: 10%;
   position: absolute;
-  bottom: 1%;
+  bottom: -35%;
+  left: 0%;
   cursor: pointer; }
 
 .to-bottom-first {
@@ -83,6 +94,7 @@ ul {
   left: 0;
   position: absolute;
   bottom: 1%;
+  left: 0%;
   cursor: pointer; }
 
 .to-first {
@@ -93,6 +105,7 @@ ul {
   height: 10%;
   position: absolute;
   bottom: 1%;
+  left: 0%;
   cursor: pointer; }
 
 .page-1 {
@@ -104,8 +117,8 @@ ul {
   align-items: center;
   justify-content: center;
   color: #fefefe;
-  background-color: #000;
-  padding: 40vh 0;
+  background-color: #1a1a1a;
+  padding: 45vh 0;
   overflow: auto; }
 
 .page-1-p {
@@ -119,7 +132,7 @@ ul {
   align-items: center;
   justify-content: center;
   color: #fefefe;
-  background-color: #000;
+  background-color: #1a1a1a;
   padding: 50vh 0;
   overflow: auto; }
 
@@ -131,8 +144,7 @@ ul {
   align-items: center;
   justify-content: center;
   color: #fefefe;
-  background-color: #000;
-  padding: 40vh 0;
+  background-color: #1a1a1a;
   overflow: auto; }
 
 .page-4 {
@@ -143,8 +155,7 @@ ul {
   align-items: center;
   justify-content: center;
   color: #fefefe;
-  background-color: #000;
-  padding: 40vh 0;
+  background-color: #1a1a1a;
   overflow: auto; }
 
 .page-5 {
@@ -155,7 +166,7 @@ ul {
   align-items: center;
   justify-content: center;
   color: #fefefe;
-  background-color: #000;
+  background-color: #1a1a1a;
   padding: 40vh 0;
   overflow: auto; }
 
@@ -167,7 +178,7 @@ ul {
   align-items: center;
   justify-content: center;
   color: #fefefe;
-  background-color: #000;
+  background-color: #1a1a1a;
   padding: 40vh 0;
   overflow: auto; }
 
@@ -205,7 +216,12 @@ ul {
     opacity: 1; } }
 
 .project-title {
-  margin: 15px 0 5px 0;
+  margin: 200px 0 5px 0;
+  text-align: center;
+  font-size: 1.6rem; }
+
+.project-title-p3 {
+  margin: 140px 0 5px 0;
   text-align: center;
   font-size: 1.6rem; }
 
@@ -224,7 +240,8 @@ ul {
   padding-top: 10px; }
 
 .content-text-summary {
-  margin-bottom: 0; }
+  margin-bottom: 0;
+  line-height: initial; }
 
 .btn-wrapper {
   text-align: center; }
@@ -238,3 +255,48 @@ ul {
     overflow: hidden; }
     .btn-info-link .fa {
       margin-right: 20px; } }
+
+.running-emoji {
+  -moz-transform: translateX(-100%);
+  -webkit-transform: translateX(-100%);
+  transform: translateX(-100%);
+  -moz-animation: run 10s linear infinite;
+  -webkit-animation: run 10s linear infinite;
+  animation: run 10s linear infinite;
+  -webkit-transition-delay: 0.5s;
+  transition-delay: 0.5s;
+  margin-bottom: 3px;
+  font-size: 1.3rem; }
+
+@-moz-keyframes run {
+  0% {
+    -moz-transform: translateX(-100%); }
+  100% {
+    -moz-transform: translateX(100%); } }
+
+@-webkit-keyframes run {
+  0% {
+    -webkit-transform: translateX(-100%); }
+  100% {
+    -webkit-transform: translateX(100%); } }
+
+@keyframes run {
+  0% {
+    -moz-transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%); }
+  100% {
+    -moz-transform: translateX(100%);
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%); } }
+
+.box {
+  width: 100%;
+  height: 0;
+  border: #fefefe solid 0.5px; }
+
+.email {
+  color: #fefefe; }
+
+.more-contact {
+  font-weight: 300 !important; }

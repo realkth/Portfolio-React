@@ -1,15 +1,15 @@
 # Portfolio-React
-React로 만든 portfolio 사이트
+React로 만든 개인 portfolio 사이트  
 
-### [개발 환경 세팅](https://github.com/facebookincubator/create-react-app)
+## [웹사이트](https://th-portfolio.firebaseapp.com/)
+
+---
+
+#### [개발 환경 세팅](https://github.com/facebookincubator/create-react-app)
 
 > npm install -g create-react-app  
 
 > create-react-app `<app name>`  
-
-- CSS 전처리기 추가  
-
-> npm install --save node-sass-chokidar
 
 - 배포를 위한 Firebase 세팅
 
@@ -19,3 +19,10 @@ React로 만든 portfolio 사이트
 
 > firebase init  
 
+#### 활용 기술
+
+  - React
+  - JSX
+  - Scss
+  - Bootstrap
+  - Firebase

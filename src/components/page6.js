@@ -11,9 +11,10 @@ class Page6 extends Component {
         </ButtonBack>
         <div className="container-fluid">
           <div className="page-6-content">
-            <h1>6더 알아보기</h1>
-            <p>나는 누구?</p>
-            <p><a className="btn btn-dark btn-lg" href="https://github.com/realkth" role="button">
+            <h1 className="h1-p6">더 알아보기</h1>
+            <p><span className="fa fa-envelope" aria-hidden="true"></span> <a className="email" href="mailto:miamirocky@gmail.com"> miamirocky@gmail.com</a></p>
+            <p className="more-contact"> 이메일로 연락주시면 상세한 이력서 보내드리겠습니다.<br /> 당신과 함께 성장하고 싶습니다.</p>
+            <p><a className="btn btn-dark btn-sm" href="https://github.com/realkth" role="button" target="_blank">
               <span className="fa fa-github " aria-hidden="true"></span>
               &nbsp; Github</a></p>
           </div>
