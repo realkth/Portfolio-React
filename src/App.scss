@@ -3,6 +3,14 @@ body {
   font-family: 'Noto Sans', sans-serif;
 }
 
+html {
+  -ms-overflow-style: none;
+}
+
+body::-webkit-scrollbar {
+  width: 0 !important;
+}
+
 // 기본 레이아웃
 h1 {
   white-space: pre-line;
@@ -23,6 +31,14 @@ h5 {
 .container {
   min-height: 90%; // width: 100%;
   text-align: left;
+}
+
+ul:focus {
+  outline: none;
+}
+
+li:focus {
+  outline: none;
 }
 
 ul {
@@ -326,9 +342,9 @@ ul {
   -moz-transform: translateX(-100%);
   -webkit-transform: translateX(-100%);
   transform: translateX(-100%);
-  -moz-animation: run 10s linear infinite;
-  -webkit-animation: run 10s linear infinite;
-  animation: run 10s linear infinite;
+  -moz-animation: run 13s linear infinite;
+  -webkit-animation: run 13s linear infinite;
+  animation: run 13s linear infinite;
   -webkit-transition-delay: 0.5s;
   transition-delay: 0.5s;
   margin-bottom: 3px;
