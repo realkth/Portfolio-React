@@ -16,6 +16,7 @@ class Page2 extends Component {
     }
     this.typed = new Typed(this.el, options);
   }
+  // 메모리 누수 방지
   componentWillUnmount() {
     this.typed.destroy();
   }

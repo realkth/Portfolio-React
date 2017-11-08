@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
 import { CarouselProvider, Slider, Slide, ButtonNext } from 'pure-react-carousel';
 
-// import Navbar from './components/navbar';
-// import Page1 from './components/page1';
 import Page2 from './components/page2';
 import Page3 from './components/page3';
 import Page4 from './components/page4';
@@ -11,6 +9,7 @@ import Page6 from './components/page6';
 import './App.css';
 
 class App extends Component {
+  // 실행되는 브라우저 width 값에 따라 터치 / 클릭 안내메시지 구분
   offsetWidth() {
     if (window.document.body.offsetWidth < 768) {
       return <span className="touch-guide">터치하여 계속 보기</span>
