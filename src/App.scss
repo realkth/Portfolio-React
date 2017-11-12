@@ -6,6 +6,8 @@ body {
 // 스크롤바 없애기
 html {
   -ms-overflow-style: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 body::-webkit-scrollbar {
@@ -198,6 +200,7 @@ ul {
   background-color: #1a1a1a;
   padding: 40vh 0;
   overflow: auto;
+  overflow-x: hidden;
 }
 
 .page-6 {

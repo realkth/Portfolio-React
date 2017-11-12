@@ -3,7 +3,9 @@ body {
   font-family: 'Noto Sans', sans-serif; }
 
 html {
-  -ms-overflow-style: none; }
+  -ms-overflow-style: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
 
 body::-webkit-scrollbar {
   width: 0 !important; }
@@ -173,7 +175,8 @@ ul {
   color: #fefefe;
   background-color: #1a1a1a;
   padding: 40vh 0;
-  overflow: auto; }
+  overflow: auto;
+  overflow-x: hidden; }
 
 .page-6 {
   height: 101vh;
