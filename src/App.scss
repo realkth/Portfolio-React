@@ -108,9 +108,23 @@ ul {
   width: 100%;
   height: 10%;
   position: absolute;
-  bottom: -35%;
+  bottom: 0%;
   left: 0%;
   cursor: pointer;
+}
+
+@media screen and (min-width: 0px) and (max-width: 767px) {
+  .to-bottom-project {
+    background: none;
+    color: #fefefe;
+    border: none;
+    width: 100%;
+    height: 10%;
+    position: absolute;
+    bottom: -35%;
+    left: 0%;
+    cursor: pointer;
+  }
 }
 
 .to-bottom-first {
@@ -272,15 +286,28 @@ ul {
 
 // page3,4 프로젝트 내역 세부 CSS
 .project-title {
-  margin: 200px 0 5px 0;
+  margin-bottom: 5px;
   text-align: center;
   font-size: 1.6rem;
 }
 
 .project-title-p3 {
-  margin: 140px 0 5px 0;
+  margin-bottom: 5px;
   text-align: center;
   font-size: 1.6rem;
+}
+
+@media screen and (min-width: 0px) and (max-width: 767px) {
+  .project-title {
+    margin: 200px 0 5px 0;
+    text-align: center;
+    font-size: 1.6rem;
+  }
+  .project-title-p3 {
+    margin: 140px 0 5px 0;
+    text-align: center;
+    font-size: 1.6rem;
+  }
 }
 
 .sub-title {
