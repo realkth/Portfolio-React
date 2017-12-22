@@ -23,6 +23,12 @@ React로 만든 개인 portfolio 사이트
 
   - React
   - JSX
+  - JavaScript
   - Scss
   - Bootstrap
   - Firebase
+
+#### 서비스 환경
+
+  - IE 10+ 이상
+  - 반응형

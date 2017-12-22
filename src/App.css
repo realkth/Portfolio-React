@@ -140,7 +140,6 @@ ul {
   justify-content: center;
   color: #fefefe;
   background-color: #1a1a1a;
-  padding: 45vh 0;
   overflow: auto; }
 
 .page-2 {
@@ -152,7 +151,6 @@ ul {
   justify-content: center;
   color: #fefefe;
   background-color: #1a1a1a;
-  padding: 50vh 0;
   overflow: auto; }
 
 .page-3 {
@@ -186,7 +184,6 @@ ul {
   justify-content: center;
   color: #fefefe;
   background-color: #1a1a1a;
-  padding: 40vh 0;
   overflow: auto;
   overflow-x: hidden; }
 
@@ -199,7 +196,6 @@ ul {
   justify-content: center;
   color: #fefefe;
   background-color: #1a1a1a;
-  padding: 40vh 0;
   overflow: auto; }
 
 .page-1-p {
@@ -278,6 +274,9 @@ ul {
 
 .btn-wrapper {
   text-align: center; }
+
+button {
+  cursor: pointer; }
 
 .btn-info-link {
   margin-right: 10px; }
