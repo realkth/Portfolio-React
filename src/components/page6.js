@@ -14,7 +14,7 @@ class Page6 extends Component {
             <h1 className="h1-p6">더 알아보기</h1>
             <p><span className="fa fa-envelope" aria-hidden="true"></span> <a className="email" href="mailto:miamirocky@gmail.com"> miamirocky@gmail.com</a></p>
             <p className="more-contact"> 이메일로 연락주시면 상세한 이력서 보내드리겠습니다.<br /> 당신과 함께 성장하고 싶습니다.</p>
-            <p><a className="btn btn-dark btn-sm" href="https://drive.google.com/file/d/1gaDY0QzOz2Jw0gbYUgDOACv-1N6zlddT/view?usp=sharing" role="button" target="_blank">
+            <p><a className="btn btn-dark btn-sm" href="https://drive.google.com/file/d/1QKHYW7chyCMqBYJicGGsJihjcLueDlIi/view?usp=sharing" role="button" target="_blank">
               <span className=" fa fa-file-text" aria-hidden="true"></span>
               &nbsp; Résumé</a></p>
             {/* <p><a className="btn btn-dark btn-sm" href="https://github.com/realkth" role="button" target="_blank">
